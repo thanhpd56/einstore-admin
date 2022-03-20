@@ -1,0 +1,43 @@
+.account
+	&-form
+		background: white
+		margin: 0 auto
+		padding: 30px 27px
+		border-radius: 3px
+		border: 1px solid #eeeeee
+
+		fieldset
+			display: block
+			margin: 0
+			padding: 0
+			border: none
+
+			&[disabled]
+				opacity: .5
+		&-item
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin-bottom: 20px
+			&-label
+				color: #999999
+				text-transform: uppercase
+				font-weight: 700
+				font-size: 11px
+			&-input
+				width: 60%
+				border: none
+				border-bottom: 1px solid #979797
+				padding: 8px 0
+				font-size: 16px
+				color: #364041
+				font-weight: 700
+				&:read-only
+					color: #65797a
+				&:focus
+					outline: none
+
+		&-submit
+			width: 100%
+			margin-bottom: 0
+			margin-top: 2rem

@@ -1,0 +1,80 @@
+.TeamIdentifierAvailabilityChecker
+	display: inline-block
+	border-radius: 4px
+	color: rgba(#fff, .8)
+	text-transform: uppercase
+	font-weight: bold
+	font-size: 12px
+	padding: .25em .5em
+	background: #abc
+
+	&.view-unavailable
+		background: #e44
+
+
+.systemSettingsForm
+	margin-bottom: 1em
+
+	&-control
+		margin-bottom: 1em
+
+		.textInput
+			margin: 0
+
+		&.view-configControl
+			display: flex
+			flex-wrap: wrap
+			border: solid 1px #eeeeee
+			border-radius: 4px
+			padding: 1em
+			align-items: center
+
+		&-label
+			font-family: monospace
+			margin-right: 1em
+			font-size: 1.25em
+
+		&-actions
+			margin-left: 1em
+
+		&-input
+			margin-left: auto
+
+			&.view-iconInput
+				display: flex
+				align-items: center
+
+	&.view-image
+		padding: 1em
+		text-align: center
+		border: solid 1px #eee
+		border-radius: 4px
+
+		label
+			cursor: pointer
+
+			input[type="file"]
+				display: none
+
+		button
+			display: inline-block
+
+		.systemSettingsForm-current
+			max-width: 256px
+			margin: 0 auto
+			position: relative
+
+			&-old
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				transform: translateX(-50%) scale(.8)
+				opacity: .5
+
+.TemplatorUpdate
+	margin-top: 2em
+	text-align: center
+
+	.button
+		display: inline-flex
